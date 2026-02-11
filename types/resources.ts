@@ -4,7 +4,7 @@ import type { FirmwareResource } from './api';
 
 const currentPrereleaseId = '2.7.19.bb3d6d5';
 
-export const showPrerelease = true;
+export const showPrerelease = false;
 
 export const currentPrerelease = <FirmwareResource>{
   id: `v${currentPrereleaseId}`,
@@ -38,6 +38,7 @@ If your device has existing settings or encryption keys, **backup your keys / co
 2. Select your device type
 3. Choose "Full Erase and Install"
 4. After flashing, download the Meshtastic app and pair via Bluetooth
+5. If you updated from a previous version or installed a UF2 on an NRF52 device, you will need to perform a factory reset on the device to activate the Hamcation mode.
 
 **73 and happy meshing!**
 `;
